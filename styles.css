@@ -1,0 +1,109 @@
+/*
+Author: Cassie Lewis
+https://clewisdev.com
+Date: 
+*/
+
+/*
+COOLORS color palette link
+https://coolors.co/2b2624-3b312f-e53e45-e57269-98734c 
+*/
+
+
+/****** VARIABLES ******/
+
+:root {
+    
+    /*COLORS*/
+    --raisin-black: #2b2624ff;
+    --black-coffee: #3b312fff;
+    --imperial-red: #e53e45ff;
+    --terra-cotta: #e57269ff;
+    --liver-chestnut: #98734cff;
+    
+    /*BORDER RADIUS*/
+    --br-soft: 1rem;
+    --br-round: 50%;
+    
+    /*FONT SIZES*/
+    /* --fs-xs: 1rem; */
+    --fs-s: 1rem;
+    --fs-m: 1.25rem;
+    --fs-l: 1.5rem;
+    --fs-title: 3rem;
+}
+
+/****** MARGIN AND PADDING RESET ******/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/******* GLOBAL STYLES *******/
+
+body {
+    height: 100vh;
+    background: linear-gradient(hsla(357, 76%, 57%, .3), hsla(10, 11%, 21%, .9)),  url("jigglesgrid.jpg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 4rem 1rem;
+   
+}
+
+h1 {
+    color: var(--raisin-black);
+    text-transform: uppercase;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+
+h2 {
+    font-size: var(--fs-title);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+
+/****** WRAPPER STYLING ******/
+
+.wrapper {
+    max-width: 800px;
+    background-color: hsl(0, 0%, 100%, .8);
+    padding: 2rem 2rem 4rem 2rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+
+/****** BUTTON STYLING ******/
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: var(--fs-m);
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    width: 15rem;
+    border-radius: .75rem;
+}
+
+#increment-btn {
+    background: #E53E45;
+    margin: 1rem;
+
+}
+
+#save-btn {
+    background: #3B312F;
+    margin: 1rem;
+}
+
+.save-el {
+    margin-bottom: 2rem;;
+}
