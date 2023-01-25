@@ -20,6 +20,7 @@ https://coolors.co/2b2624-3b312f-e53e45-e57269-98734c
     --imperial-red: #e53e45ff;
     --blue: #12304d;
     --liver-chestnut: #98734cff;
+    --sea-green: hsla(146, 50%, 36%, 0.7);
     
     /*BORDER RADIUS*/
     --br-soft: 1rem;
@@ -30,7 +31,7 @@ https://coolors.co/2b2624-3b312f-e53e45-e57269-98734c
     --fs-s: 1rem;
     --fs-m: 1.25rem;
     --fs-l: 1.5rem;
-    --fs-title: 3rem;
+    --fs-title: 1.75rem;
 }
 
 /****** MARGIN AND PADDING RESET ******/
@@ -50,14 +51,15 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-align: center;
-    margin: 4rem 2rem;
+    margin: 4rem 1rem;
    
 }
 
 h1 {
     color: var(--raisin-black);
-    background-color: seagreen;
+    background-color: var(--sea-green);
     text-transform: uppercase;
+    font-size: var(--fs-title);
     padding: .75rem;
     margin-top: .75rem;
     margin-bottom: 1rem;
@@ -65,8 +67,7 @@ h1 {
 }
 
 h2 {
-    font-size: var(--fs-title);
-    margin-top: 0;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
 }
 
@@ -90,7 +91,7 @@ button {
     width: 15rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    font-size: var(--fs-m);
+    font-size: var(--fs-l);
     font-weight: bold;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -111,4 +112,15 @@ button {
 
 .save-el {
     margin-bottom: 2rem;
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: var(--fs-m);
+    }
+    
+    button {
+        width: 10rem;
+        font-size: var(--fs-s);
+    }
 }
