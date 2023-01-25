@@ -56,9 +56,12 @@ body {
 
 h1 {
     color: var(--raisin-black);
+    background-color: seagreen;
     text-transform: uppercase;
+    padding: .75rem;
     margin-top: .75rem;
     margin-bottom: 1rem;
+    border-radius: var(--br-soft);
 }
 
 h2 {
@@ -75,7 +78,7 @@ h2 {
     background-color: hsl(0, 0%, 100%, 0.8);
     padding: 2rem 2rem 4rem 2rem;
     margin: 0 auto;
-    border-radius: 1rem;
+    border-radius: var(--br-soft);
     border: 8px solid var(--blue);
     box-shadow: 0 1rem .5rem .5rem var(--raisin-black);
 }
@@ -84,6 +87,7 @@ h2 {
 /****** BUTTON STYLING ******/
 
 button {
+    width: 15rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-size: var(--fs-m);
@@ -91,21 +95,20 @@ button {
     padding-top: 1rem;
     padding-bottom: 1rem;
     border: none;
-    width: 15rem;
-    border-radius: .75rem;
+    border-radius: var(--br-soft);
 }
 
 #increment-btn {
-    background: #E53E45;
+    background: var(--imperial-red);
     margin: 1rem;
 
 }
 
 #save-btn {
-    background: #3B312F;
+    background: var(--blue);
     margin: 1rem;
 }
 
 .save-el {
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
 }
