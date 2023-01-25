@@ -12,5 +12,6 @@ function save() {
     saveEl.textContent += countStr
     count = 0;
     countEl.textContent = 0;
+    
 }
 
